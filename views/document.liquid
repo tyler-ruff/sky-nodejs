@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+    <head>
+        <meta charset="utf-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+
+        <link rel="dns-prefetch" href="//blazed.sirv.com/">
+        <link rel="preconnect" href="https://blazed.sirv.com/">
+
+        <link rel="stylesheet" href="lib/fire.css">
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/tailwindcss/2.2.19/tailwind.min.css">
+
+        <!--
+        <script src="lib/fire.js"></script>
+        <script src="assets/js/site.blz.js"></script>
+        -->
+        
+        <!--[if lt IE 9]>
+            <script src="https://cdnjs.cloudflare.com/ajax/libs/html5shiv/3.7.3/html5shiv.min.js"></script>
+        <![endif]-->
+    </head>
+    <body>
+      {% render 'header.liquid' %}
+      <main>
+        <article>
+          {% block %}{% endblock %}
+        </article>
+      </main>
+      {% render 'footer.liquid' %}
+    </body>
+</html>
